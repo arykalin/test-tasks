@@ -6,5 +6,5 @@ class{"nginx":
 
 nginx::resource::vhost { $hostname:
   listen_port => 8888,
-  proxy       => 'http://localhost:8080',
+  proxy       => 'http://tomcat:8080',
 }
