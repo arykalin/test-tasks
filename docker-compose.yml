@@ -1,0 +1,16 @@
+version: '2'
+services:
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+      - "8888:8888"
+    command: nginx
+    links:
+      - tomcat
+  tomcat:
+    build:
+      context: ./tomcat
+    ports:
+      - "8080:8080"
+    command: /opt/tomcat/bin/catalina.sh run
