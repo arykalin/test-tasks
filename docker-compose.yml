@@ -6,8 +6,6 @@ services:
     ports:
       - "8888:8888"
     command: nginx
-    links:
-      - tomcat
   tomcat:
     build:
       context: ./tomcat
