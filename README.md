@@ -1,6 +1,6 @@
 # test-tasks 1
 run:  
-REPO='https://github.com/arykalin/test-tasks.git' docker-compose up
+REPO='https://github.com/arykalin/test-tasks.git' docker-compose up  
 if you want to rebuild image run:  
 REPO='https://github.com/arykalin/test-tasks.git' docker-compose up --build
 
